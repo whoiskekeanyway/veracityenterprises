@@ -1,0 +1,64 @@
+@media only screen and (max-width: 425px) {
+    .landing-page {
+        width: 100%;
+        padding: 0;
+
+
+    }
+
+    .landing-page img {
+        width: 100%;
+    }
+
+    .landing-page-item {
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        transition: all 0.3s ease-out;
+        overflow: hidden;
+
+    }
+
+    nav ul li {
+        padding: 20px;
+        text-align: center;
+
+
+    }
+
+    .toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        color: #631200;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+
+    }
+
+
+
+}
+
+@media (max-width: 768px) {}

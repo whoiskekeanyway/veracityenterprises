@@ -1,3 +1,1 @@
-# veracityproperties
-# veracityenterprises
 # veracityenterprises
