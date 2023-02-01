@@ -1,21 +1,5 @@
-@media only screen and (max-width: 425px) {
-    .landing-page {
-        width: 100%;
-        padding: 0;
 
-
-    }
-
-    .landing-page img {
-        width: 100%;
-    }
-
-    .landing-page-item {
-        padding: 0;
-
-    }
-}
-
+/* navbar */
 @media (max-width: 768px) {
     nav {
         justify-content: space-between;
@@ -50,15 +34,39 @@
     }
 
 
-    footer {
 
-        flex-direction: column;
-
-
-    }
 
 
 
 }
 
-@media (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .landing-page {}
+
+    .landing-page img {}
+
+    .landing-page-item {}
+
+    .our-story {
+
+        padding: 0.1rem 0rem;
+    }
+
+    .introduction {
+background-color: darkgoldenrod;
+        padding: 1rem 0.1rem;
+        max-width: 100%;
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
