@@ -1,4 +1,3 @@
-
 /* navbar */
 @media (max-width: 768px) {
     nav {
@@ -13,6 +12,7 @@
         width: 100%;
         transition: all 0.3s ease-out;
         overflow: hidden;
+        background-color: #c7dfe4;
 
     }
 
@@ -53,7 +53,7 @@
     }
 
     .introduction {
-background-color: darkgoldenrod;
+    
         padding: 1rem 0.1rem;
         max-width: 100%;
 

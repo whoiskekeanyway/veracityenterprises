@@ -124,7 +124,7 @@ select {
 }
 
 .backToTopBtn:hover {
-    background-color: #630020;
+    background-color: whitesmoke;
 }
 
 /* Navbar */
@@ -160,7 +160,7 @@ nav ul li {
 nav ul li a {
     color: #630020;
     text-decoration: none;
-    font-size: clamp(18px, 2vw, 22px);
+    font-size: clamp(18px, 3vw, 22px);
     font-family: var(--ff-accent);
     font-weight: 900px;
 }
@@ -644,6 +644,7 @@ h6 {
     padding-right: 10px;
     font-family: 'Palanquin', sans-serif;
     font-weight: 700;
+    color: #005163;
 }
 
 #element-to-show {
