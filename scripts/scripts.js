@@ -18,6 +18,9 @@ times.addEventListener("click", function () {
 
 
 
+
+
+
 // Function to dynamically change the date
 
 const footerYear = document.querySelectorAll(".year");
