@@ -18,6 +18,20 @@ times.addEventListener("click", function () {
 
 
 
+  // Bring in the toggle buttons for the FAQs
+
+        const toggles = document.querySelectorAll(".faq-toggle");
+
+        // Loop through the toggle buttons and add event listeners
+        // parentNode is the parent of the toggle button
+        toggles.forEach((toggle) => {
+            toggle.addEventListener("click", () => {
+                // add the active class to the parent of the toggle button
+                toggle.parentNode.classList.toggle("active");
+            });
+        });
+
+
 
 
 

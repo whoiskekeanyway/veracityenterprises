@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,700&family=Palanquin:wght@300;600;700&display=swap');
+
+
+
+
+.faq-container {
+  
+  
+
+}
+
+.faq {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #005163;
+    margin: 20px 0px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq:hover {
+    border: 5px solid #634400;
+    transition: 0.3s ease-in-out
+}
+
+.faq.active {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+    content: "\f075";
+    font-family: "Font Awesome 5 Free";
+    color: #005163;
+    font-size: 7rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 0.3s ease;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.faq.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: clamp(16px, 3vw, 20px);
+}
+
+.faq-text {
+    font-family: var(--ff-accent);
+    font-weight: 300;
+    display: none;
+    margin: 10px 0 0;
+    line-height: 1.3;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.faq-toggle:focus {
+    outline: none;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    color: #fff;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: #005163;
+}
