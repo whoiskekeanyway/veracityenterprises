@@ -7,9 +7,9 @@
 }
 
 :root {
-    --clr-primary-200: #40476D;
+    --clr-primary-200: #005163;
     --clr-primary-400: orangered;
-    --clr-neutral-100: rgb(214, 203, 203);
+    --clr-neutral-100: #631200;
     --clr-neutral-900: #222c2a;
 
     --ff-primary: 'Palanquin', sans-serif;
@@ -259,6 +259,13 @@ nav ul li a {
 .products-list-ul {
     list-style: none;
     font-family: var(--ff-accent);
+    background-color: crimson;
+  
+}
+
+.products-list-ul li {
+    background-color: floralwhite;
+    padding-left: 0.50rem;
 }
 
 
@@ -302,7 +309,7 @@ nav ul li a {
     color: #005163;
     font-size: clamp(18px, 4vw, 24px);
     letter-spacing: 2px;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 .process-paragraph {
@@ -322,7 +329,7 @@ nav ul li a {
 }
 
 .our-services--container-section p span {
-    color: #005163;
+    color: rgb(243, 68, 5);
     font-weight: 900;
     font-family: var(--ff-primary);
     font-size: clamp(20px, 3vw, 24px);
@@ -332,7 +339,7 @@ nav ul li a {
 }
 
 .email-link {
-    color: #631200;
+    color: orangered;
     text-decoration: none;
     font-family: var(--ff-primary);
     font-size: clamp(18px, 3vw, 20px);
@@ -407,9 +414,13 @@ nav ul li a {
     font-size: clamp(25px, 4vw, 40px);
     display: inline-block;
     position: relative;
-    color: #005163;
+    color: var(--clr-primary-200);
     width: fit-content;
 
+}
+
+.our-story-title.faqq {
+    font-size: clamp(25px, 4vw, 35px);
 }
 
 .our-story-title:hover {
@@ -426,7 +437,7 @@ nav ul li a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #630020;
+    background-color: var(--clr-neutral-100);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -471,14 +482,37 @@ nav ul li a {
     margin: 0 auto;
 }
 
+.our-services-items.last {
+background-image: linear-gradient(40deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(221deg 100% 23%) 1%,
+            hsl(210deg 100% 22%) 3%,
+            hsl(199deg 100% 21%) 6%,
+            hsl(199deg 45% 31%) 9%,
+            hsl(229deg 14% 55%) 13%,
+            hsl(300deg 11% 71%) 18%,
+            hsl(350deg 32% 90%) 25%,
+            hsl(360deg 33% 94%) 33%,
+            hsl(360deg 15% 90%) 45%,
+            hsl(360deg 7% 87%) 62%,
+            hsl(0deg 2% 83%) 100%);
+ 
+}
+
 .our-services-items {
-    background-image: linear-gradient(15deg,
-            hsl(191deg 100% 19%) 0%,
-            hsl(37deg 17% 81%) 26%,
-            hsl(19deg 94% 92%) 54%,
-            hsl(12deg 82% 92%) 74%,
-            hsl(0deg 42% 91%) 87%,
-            hsl(0deg 84% 81%) 100%);
+    background-image: linear-gradient(215deg,
+                hsl(240deg 100% 20%) 0%,
+                hsl(221deg 100% 23%) 1%,
+                hsl(210deg 100% 22%) 3%,
+                hsl(199deg 100% 21%) 6%,
+                hsl(199deg 45% 31%) 9%,
+                hsl(229deg 14% 55%) 13%,
+                hsl(300deg 11% 71%) 18%,
+                hsl(350deg 32% 90%) 25%,
+                hsl(360deg 33% 94%) 33%,
+                hsl(360deg 15% 90%) 45%,
+                hsl(360deg 7% 87%) 62%,
+                hsl(0deg 2% 83%) 100%);
 }
 
 .our-services-items.photo {

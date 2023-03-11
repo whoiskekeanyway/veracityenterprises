@@ -41,6 +41,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .landing-page {
         height: 70vh;
     }
@@ -60,6 +64,10 @@
         max-width: 100%;
 
 
+    }
+
+    .container {
+        flex-direction: column-reverse;
     }
 }
 
