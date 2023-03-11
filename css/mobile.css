@@ -41,7 +41,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .landing-page {}
+    .landing-page {
+        height: 70vh;
+    }
 
     .landing-page img {}
 
@@ -53,11 +55,28 @@
     }
 
     .introduction {
-    
+
         padding: 1rem 0.1rem;
         max-width: 100%;
 
 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .introduction-article {
+
+        flex-direction: column;
+
+    }
+
+    .our-services--container {
+        flex-direction: column;
+    }
+
+
+    .contact-section {
+        flex-direction: column;
     }
 }
 

@@ -282,13 +282,11 @@ nav ul li a {
     padding: 3rem 1rem;
     gap: 1rem 0.5rem;
     height: auto;
-    background-color: darkslateblue;
 }
 
 .our-services--container section {
     flex: 1;
     padding: 0.50rem;
-    background-color: blanchedalmond;
 }
 
 .our-services--container-section {
@@ -331,6 +329,13 @@ nav ul li a {
     letter-spacing: 2px;
     line-height: 1.4;
 
+}
+
+.email-link {
+    color: #631200;
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    font-size: clamp(18px, 3vw, 20px);
 }
 
 .introduction-article {
