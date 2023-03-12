@@ -1,0 +1,58 @@
+/* Gallary */
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+#gallery img {
+    max-width: 350px;
+    height: auto;
+    cursor: pointer;
+    padding: 0.50rem;
+    border-radius: 10px;
+}
+
+#gallery img:hover {
+    opacity: 0.5;
+}
+
+#lightbox {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    height: 500px;
+    background-color: rgba(194, 137, 137, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#lightbox img {
+    max-width: 80%;
+    height: 80%;
+    margin-right: 2rem;
+    padding: 2rem 0rem;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orangered;
+    color: rgb(248, 244, 243);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}

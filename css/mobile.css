@@ -86,6 +86,8 @@
     .contact-section {
         flex-direction: column;
     }
+
+    .contact-section {}
 }
 
 @media (max-width: 768px) {
