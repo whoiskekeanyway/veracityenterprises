@@ -16,6 +16,10 @@
     --ff-accent: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Reset margins */
 body,
@@ -326,8 +330,8 @@ nav ul li a:hover::after {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 1rem;
-    gap: 1rem 0.5rem;
+    padding: 0.10rem;
+    gap: 1rem;
     height: auto;
 }
 
@@ -591,8 +595,6 @@ nav ul li a:hover::after {
 }
 
 
-
-
 .more-stuff-grid {
     max-width: 1240px;
     margin: 0 auto;
@@ -718,7 +720,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
     max-width: 1200px;
     padding: 3rem 1rem;
 }
