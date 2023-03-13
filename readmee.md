@@ -14,4 +14,22 @@ font-family: 'Palanquin', sans-serif;
 #630020 (Dark Scarlet) 
 #634400 (Violin Brown).
 
+&nbsp; //Spaces between
 
+
+New Order Regular
+font-family: "new-order", sans-serif;
+font-weight: 400;
+font-style: normal;
+New Order Medium
+font-family: "new-order", sans-serif;
+font-weight: 500;
+font-style: normal;
+New Order Semibold
+font-family: "new-order", sans-serif;
+font-weight: 600;
+font-style: normal;
+New Order Bold
+font-family: "new-order", sans-serif;
+font-weight: 700;
+font-style: normal;
