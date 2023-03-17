@@ -235,7 +235,6 @@ nav ul li a:hover::after {
 }
 
 .landing-page img {
-    max-width: 1200px;
     padding: 2rem 0rem;
 }
 
