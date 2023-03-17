@@ -230,14 +230,19 @@ nav ul li a:hover::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0rem;
+    padding: 2rem 0rem;
 
+}
+
+.landing-page img {
+    max-width: 1200px;
+    padding: 2rem 0rem;
 }
 
 .landing-page-item.words {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 
