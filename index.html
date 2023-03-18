@@ -104,13 +104,21 @@
             </p>
         </section>
 
-        <img src="./assets/5103595.jpg" alt="">
+        <img class="my-element" src="./assets/5103595.jpg" alt="">
 
     </div>
 
-    <div id="our--services" class="our-services-container">
+    <style>
+        .text {
+            opacity: 0;
+        }
 
-        <article>
+      
+    </style>
+
+    <div id="our--services" class="our-services-container text">
+
+        <article class="">
             <h2 class="our-story-title">our services</h2>
             <p class="our-story-title-sub">
                 Get the high-quality prints and copies you deserve
@@ -202,7 +210,9 @@
     </div>
 
     <div class="middle-image">
-        <img src="Mask group.png" alt="">
+        
+        <img src="Mask group.png" class="my-image" style="display: none;">
+
     </div>
 
     <div id="our--stories" class="our-services-container">
@@ -570,8 +580,19 @@
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js">
+    </script>
+
     <script src="./scripts/scripts.js"></script>
     <script src="./scripts/lightbox.js"></script>
+
+    <script>
+
+    </script>
+
+
 
 
 </body>

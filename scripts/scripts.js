@@ -16,24 +16,18 @@ times.addEventListener("click", function () {
   times.style.display = "none";
 });
 
+// Bring in the toggle buttons for the FAQs
 
+const toggles = document.querySelectorAll(".faq-toggle");
 
-  // Bring in the toggle buttons for the FAQs
-
-        const toggles = document.querySelectorAll(".faq-toggle");
-
-        // Loop through the toggle buttons and add event listeners
-        // parentNode is the parent of the toggle button
-        toggles.forEach((toggle) => {
-            toggle.addEventListener("click", () => {
-                // add the active class to the parent of the toggle button
-                toggle.parentNode.classList.toggle("active");
-            });
-        });
-
-
-
-
+// Loop through the toggle buttons and add event listeners
+// parentNode is the parent of the toggle button
+toggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    // add the active class to the parent of the toggle button
+    toggle.parentNode.classList.toggle("active");
+  });
+});
 
 // Function to dynamically change the date
 
@@ -53,12 +47,9 @@ function showOnHover(trigger, element) {
   };
 }
 
-
-
 let trigger = document.getElementById("trigger");
 let element = document.getElementById("element-to-show");
 showOnHover(trigger, element);
-
 
 const images = document.querySelectorAll("#gallery img");
 const lightbox = document.createElement("div");
@@ -86,8 +77,6 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-
-
 // Back to top button
 
 //Get the button
@@ -112,4 +101,59 @@ backToTopBtn.addEventListener("click", function () {
     left: 0,
     behavior: "smooth",
   });
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const text = document.querySelector(".text");
+
+gsap.to(text, {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: text,
+    start: "top 80%",
+    end: "top 10%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+const tls = gsap.timeline();7
+installMediaQueryWatcher("(min-width: 600px)", function (matches) {
+  if (matches) {
+    tls.from(".landing-page-item", 1.8, {
+      x: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 5,
+      opacity: 0,
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  } else {
+    tls.from(".landing-page-item", 1.8, {
+      css: { display: "block !important" },
+    });
+  }
+});
+
+function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
+  var mql = window.matchMedia(mediaQuery);
+  mql.addListener(function (e) {
+    return layoutChangedCallback(e.matches);
+  });
+  layoutChangedCallback(mql.matches);
+}
+
+
+// Select the element to animate
+const ele = document.querySelector('.my-element');
+
+// Create an animation
+const animation = gsap.to(ele, { duration: 1, opacity: 1, y: 50 });
+
+// Add an event listener to trigger the animation
+ele.addEventListener("click", () => {
+  animation.restart();
 });
