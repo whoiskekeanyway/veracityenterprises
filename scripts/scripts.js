@@ -103,20 +103,7 @@ backToTopBtn.addEventListener("click", function () {
   });
 });
 
-gsap.registerPlugin(ScrollTrigger);
 
-const text = document.querySelector(".text");
-
-gsap.to(text, {
-  opacity: 1,
-  duration: 1,
-  scrollTrigger: {
-    trigger: text,
-    start: "top 80%",
-    end: "top 10%",
-    toggleActions: "play none none reverse",
-  },
-});
 
 const tls = gsap.timeline();7
 installMediaQueryWatcher("(min-width: 600px)", function (matches) {
@@ -156,4 +143,20 @@ const animation = gsap.to(ele, { duration: 1, opacity: 1, y: 50 });
 // Add an event listener to trigger the animation
 ele.addEventListener("click", () => {
   animation.restart();
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+const text = document.querySelector(".text");
+
+gsap.to(text, {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: text,
+    start: "top 60%",
+    end: "top 10%",
+    toggleActions: "play none none reverse",
+  },
 });
