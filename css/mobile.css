@@ -13,6 +13,7 @@
         transition: all 0.3s ease-out;
         overflow: hidden;
         background-color: #c7dfe4;
+        z-index: 1;
 
     }
 
