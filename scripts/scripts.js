@@ -103,9 +103,8 @@ backToTopBtn.addEventListener("click", function () {
   });
 });
 
-
-
-const tls = gsap.timeline();7
+const tls = gsap.timeline();
+7;
 installMediaQueryWatcher("(min-width: 600px)", function (matches) {
   if (matches) {
     tls.from(".landing-page-item", 1.8, {
@@ -133,9 +132,8 @@ function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
   layoutChangedCallback(mql.matches);
 }
 
-
 // Select the element to animate
-const ele = document.querySelector('.my-element');
+const ele = document.querySelector(".my-element");
 
 // Create an animation
 const animation = gsap.to(ele, { duration: 1, opacity: 1, y: 50 });
@@ -144,7 +142,6 @@ const animation = gsap.to(ele, { duration: 1, opacity: 1, y: 50 });
 ele.addEventListener("click", () => {
   animation.restart();
 });
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -159,4 +156,38 @@ gsap.to(text, {
     end: "top 10%",
     toggleActions: "play none none reverse",
   },
+});
+
+const container = document.querySelector(".overlay-photo");
+const overlay = document.querySelector(".overlay");
+
+
+const containers = document.querySelector(".overlay-photos");
+const overlays = document.querySelector(".overlays");
+
+const containered = document.querySelector(".overlay-photos-ed");
+const overlayed = document.querySelector(".overlayed");
+
+container.addEventListener("mouseenter", () => {
+  overlay.style.opacity = 1;
+});
+
+container.addEventListener("mouseleave", () => {
+  overlay.style.opacity = 0;
+});
+
+containers.addEventListener("mouseenter", () => {
+  overlays.style.opacity = 1;
+});
+
+containers.addEventListener("mouseleave", () => {
+  overlays.style.opacity = 0;
+});
+
+containered.addEventListener("mouseenter", () => {
+  overlayed.style.opacity = 1;
+});
+
+containered.addEventListener("mouseleave", () => {
+  overlayed.style.opacity = 0;
 });
