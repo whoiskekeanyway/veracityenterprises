@@ -191,3 +191,35 @@ containered.addEventListener("mouseenter", () => {
 containered.addEventListener("mouseleave", () => {
   overlayed.style.opacity = 0;
 });
+
+
+
+
+
+// Set the text for each paragraph element
+const paragraphTexts = [
+  "Gandlisa hi ku kongoma",
+  "Hatisa ka Precision",
+  "Phrinta nge-Precision",
+  "Druk met presisie",
+  "Shicilela nge-Precision",
+  "Phrintha ka Nepagalo",
+];
+
+// Select the paragraph element using its ID
+const myParagraph = document.getElementById('my-paragraph');
+
+// Create a timeline that loops infinitely
+const timeline = new TimelineMax({ repeat: -1 });
+
+// Add a separate animation for each paragraph text
+paragraphTexts.forEach(text => {
+  // Create a TweenMax animation to change the text
+  const animation = TweenMax.to(myParagraph, 0.5, { textContent: text });
+
+  // Add the animation to the timeline with a 3-second delay
+  timeline.add(animation, `+=3`);
+});
+
+// Start the timeline
+timeline.play();
