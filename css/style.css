@@ -638,7 +638,6 @@ nav ul li a:hover::after {
 @media (max-width: 767px) {
     .container {
         flex-direction: column;
-        background-color: #630020;
     }
 
 
