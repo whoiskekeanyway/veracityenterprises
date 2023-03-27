@@ -47,7 +47,9 @@
 
     .landing-page img {}
 
-    .landing-page-item {}
+    .landing-page-item.words {
+        padding: 0rem 0.5rem;
+    }
 
     .our-story {
 
