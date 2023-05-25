@@ -666,7 +666,6 @@ nav ul li a:hover::after {
     align-items: center;
     grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 600px)) minmax(1em, 1fr);
 
-
 }
 
 
