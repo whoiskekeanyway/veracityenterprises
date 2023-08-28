@@ -228,9 +228,6 @@ nav ul li a:hover::after {
 /* landing Page */
 
 
-
-
-
 .landing-page-alt {
     max-width: 1440px;
     margin: 0 auto;
@@ -239,7 +236,9 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     padding: 2rem 0.50rem;
-    height: 100vh;
+    height: auto;
+
+
 }
 
 .landing-page-alt div {
@@ -248,7 +247,7 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 20px;
+    padding: 3rem 1rem;
 
 }
 
@@ -256,9 +255,8 @@ nav ul li a:hover::after {
     flex: 1;
     max-width: 500px;
     padding: 1rem;
+
 }
-
-
 
 .landing-page-item.section {
     display: flex;
@@ -268,37 +266,39 @@ nav ul li a:hover::after {
 }
 
 .paragraph {
-    font-size: clamp(16px, 5vw, 25px);
-    text-transform: uppercase;
-    font-family: var(--ff-accent);
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
+
 }
 
 .animated-span {
+    font-size: clamp(18px, 4vw, 22px);
+    font-family: var(--ff-accent);
     display: inline-block;
-    padding: 2px 20px;
+    padding: 2px 5px;
     margin: 5px;
     color: white;
     border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s ease-in-out;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+
 }
 
 .sub-head {
     line-height: 1;
     letter-spacing: 1px;
-    max-width: 500px;
-    color: var(--clr-neutral-100);
-    font-size: clamp(20px, 3vw, 24px);
+    font-size: clamp(18px, 3vw, 22px);
     font-family: var(--ff-primary);
     text-transform: uppercase;
     font-weight: 700;
+    padding: 2px;
 }
-
-
 
 
 .applications {
@@ -308,7 +308,7 @@ nav ul li a:hover::after {
     letter-spacing: 1px;
     color: black !important;
     font-weight: 400;
-    width: 500px;
+    padding: 2px;
 }
 
 .landing-page-item.words {

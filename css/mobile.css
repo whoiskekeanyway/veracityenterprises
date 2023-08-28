@@ -46,23 +46,13 @@
         overflow-x: hidden;
     }
 
-    .landing-page {
-        height: auto;
-    }
-
-
-    .landing-page-item.words {}
-
     .our-story {
-
         padding: 0.1rem 0rem;
     }
 
     .introduction {
-
         padding: 1rem 0.1rem;
         max-width: 100%;
-
 
     }
 
@@ -73,10 +63,27 @@
     .landing-page-alt div {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
 
-        gap: 3rem;
+    }
+
+    .landing-page-item {
+        max-width: 100%;
+    }
+
+
+
+    .landing-page-item.words img {
+        width: 80px;
+    }
+
+    .animated-span {
+
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-transform: none;
+
+
     }
 }
 
