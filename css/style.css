@@ -240,9 +240,6 @@ nav ul li a:hover::after {
     align-items: center;
     padding: 2rem 0.50rem;
     height: 100vh;
-    background-color: cadetblue;
-
-
 }
 
 .landing-page-alt div {
@@ -271,14 +268,13 @@ nav ul li a:hover::after {
 }
 
 .paragraph {
-    font-size: clamp(20px, 5vw, 30px);
+    font-size: clamp(16px, 5vw, 25px);
     text-transform: uppercase;
     font-family: var(--ff-accent);
     font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
-
 }
 
 .animated-span {
@@ -292,13 +288,14 @@ nav ul li a:hover::after {
 }
 
 .sub-head {
-    font-size: clamp(22px, 5vw, 25px);
-    text-transform: uppercase;
-    font-family: var(--ff-primary);
-    font-weight: 400;
     line-height: 1;
     letter-spacing: 1px;
     max-width: 500px;
+    color: var(--clr-neutral-100);
+    font-size: clamp(20px, 3vw, 24px);
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
