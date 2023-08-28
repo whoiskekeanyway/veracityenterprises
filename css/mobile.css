@@ -34,7 +34,12 @@
         cursor: pointer;
     }
 
+    .blob {
+        display: none !important;
+    }
 }
+
+
 
 @media only screen and (max-width: 768px) {
     body {
@@ -42,14 +47,11 @@
     }
 
     .landing-page {
-        height: 70vh;
+        height: auto;
     }
 
-    .landing-page img {}
 
-    .landing-page-item.words {
-        padding: 0rem 0.5rem;
-    }
+    .landing-page-item.words {}
 
     .our-story {
 
@@ -66,6 +68,15 @@
 
     .container {
         flex-direction: column-reverse;
+    }
+
+    .landing-page-alt div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 3rem;
     }
 }
 

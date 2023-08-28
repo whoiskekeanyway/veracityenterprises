@@ -223,3 +223,25 @@ paragraphTexts.forEach(text => {
 
 // Start the timeline
 timeline.play();
+
+
+
+
+const spans = document.querySelectorAll(".animated-span");
+const colors = ["#005163", "#631200", "#634400", "gold","black"];
+let currentIndex = 0;
+
+function changeBackgroundColor() {
+  spans.forEach((span, index) => {
+    const colorIndex = (currentIndex + index) % colors.length;
+    span.style.backgroundColor = colors[colorIndex];
+  });
+
+  currentIndex = (currentIndex + 1) % colors.length;
+}
+
+// Start changing colors after 3 seconds and repeat every 3 seconds
+setTimeout(() => {
+  changeBackgroundColor();
+  setInterval(changeBackgroundColor, 3000);
+}, 3000);
