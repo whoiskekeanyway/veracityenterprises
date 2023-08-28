@@ -158,39 +158,7 @@ gsap.to(text, {
   },
 });
 
-const container = document.querySelector(".overlay-photo");
-const overlay = document.querySelector(".overlay");
 
-
-const containers = document.querySelector(".overlay-photos");
-const overlays = document.querySelector(".overlays");
-
-const containered = document.querySelector(".overlay-photos-ed");
-const overlayed = document.querySelector(".overlayed");
-
-container.addEventListener("mouseenter", () => {
-  overlay.style.opacity = 1;
-});
-
-container.addEventListener("mouseleave", () => {
-  overlay.style.opacity = 0;
-});
-
-containers.addEventListener("mouseenter", () => {
-  overlays.style.opacity = 1;
-});
-
-containers.addEventListener("mouseleave", () => {
-  overlays.style.opacity = 0;
-});
-
-containered.addEventListener("mouseenter", () => {
-  overlayed.style.opacity = 1;
-});
-
-containered.addEventListener("mouseleave", () => {
-  overlayed.style.opacity = 0;
-});
 
 
 

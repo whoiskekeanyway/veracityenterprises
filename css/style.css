@@ -386,7 +386,6 @@ nav ul li a:hover::after {
 
 
 .images-folder {
-
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -394,8 +393,12 @@ nav ul li a:hover::after {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0rem;
     height: auto;
+    padding: 3rem 1rem;
+}
+
+.images-folder img {
+  
 }
 
 .our--services--intro-p {
@@ -571,6 +574,22 @@ nav ul li a:hover::after {
 }
 
 /* Our Story Section */
+
+#our--stories {
+    background-image: linear-gradient(40deg,
+                hsl(240deg 100% 20%) 0%,
+                hsl(221deg 100% 23%) 1%,
+                hsl(210deg 100% 22%) 3%,
+                hsl(199deg 100% 21%) 6%,
+                hsl(199deg 45% 31%) 9%,
+                hsl(229deg 14% 55%) 13%,
+                hsl(300deg 11% 71%) 18%,
+                hsl(350deg 32% 90%) 25%,
+                hsl(360deg 33% 94%) 33%,
+                hsl(360deg 15% 90%) 45%,
+                hsl(360deg 7% 87%) 62%,
+                hsl(0deg 2% 83%) 100%);
+}
 
 .our-story {
     display: flex;
