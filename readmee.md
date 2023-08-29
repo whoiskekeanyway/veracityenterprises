@@ -14,6 +14,11 @@ font-family: 'Palanquin', sans-serif;
 #630020 (Dark Scarlet) 
 #634400 (Violin Brown).
 
+  --clr-primary: #005163;
+    --clr-secondary: orangered;
+    --clr-accent: floralwhite;
+    --clr-neutral: #631200;
+
 &nbsp; //Spaces between
 
 
