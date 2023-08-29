@@ -160,10 +160,6 @@ gsap.to(text, {
 
 
 
-
-
-
-
 // Set the text for each paragraph element
 const paragraphTexts = [
   "Gandlisa hi ku kongoma",

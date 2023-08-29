@@ -96,13 +96,13 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: antiquewhite;
+    background: var(--clr-accent);
     border: 0.25em solid var(--clr-neutral);
     border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: floralwhite !important;
+    background: var(--clr-accent) !important;
     border: 0.25em solid var(--clr-primary);
 }
 
@@ -249,14 +249,14 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 3rem 1rem;
+    padding: 3rem 0.50rem;
 
 }
 
 .landing-page-item {
     flex: 1;
     max-width: 500px;
-    padding: 1rem;
+ 
 
 }
 
@@ -273,6 +273,7 @@ nav ul li a:hover::after {
     overflow: hidden;
     text-overflow: clip;
 
+
 }
 
 .animated-span {
@@ -281,7 +282,7 @@ nav ul li a:hover::after {
     display: inline-block;
     padding: 2px 5px;
     margin: 5px;
-    color: white;
+    color: var(--clr-accent);
     border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s ease-in-out;
@@ -319,6 +320,7 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    padding: 0.50rem;
 
 }
 
@@ -449,7 +451,7 @@ nav ul li a:hover::after {
 }
 
 .products-list-ul li {
-    background-color: floralwhite;
+    background-color: var(--clr-accent);
     padding-left: 0.10rem;
     line-height: 1.3;
     letter-spacing: 2px;
@@ -460,7 +462,7 @@ nav ul li a:hover::after {
 
 .products-list-ul li:hover {
     background-color: var(--clr-primary);
-    color: floralwhite;
+    color: var(--clr-accent);
 }
 
 
@@ -964,7 +966,7 @@ nav ul li a:hover::after {
 }
 
 .visit-us {
-    color: var(--clr-neutral-100);
+    color: var(--clr-neutral);
     font-size: clamp(20px, 3vw, 24px);
     font-family: var(--ff-primary);
     text-transform: uppercase;
@@ -973,7 +975,7 @@ nav ul li a:hover::after {
 }
 
 .vera-city-name {
-    color: var(--clr-primary-200);
+    color: var(--clr-primary);
     font-size: clamp(18px, 3vw, 22px);
     font-family: var(--ff-accent);
     text-transform: capitalize;
@@ -991,7 +993,7 @@ footer {
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
-    background-color: floralwhite;
+    background-color: var(--clr-accent);
 
 }
 
@@ -1012,18 +1014,19 @@ footer {
 .phone-number {
     font-family: var(--ff-primary);
     font-size: clamp(20px, 3vw, 22px);
-    background-color: var(--clr-neutral-100);
+    background-color: var(--clr-primary);
     padding: 0.50rem;
-    color: var(--clr-primary);
+    color: var(--clr-accent);
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 1.3;
     width: fit-content;
+    text-decoration: none;
 }
 
 .phone-number:hover {
-    background-color: var(--clr-accent);
-    color: var(--clr-neutral-200);
+    background-color: var(--clr-secondary);
+    color: var(--clr-neutral);
 
 
 }
@@ -1097,7 +1100,7 @@ footer {
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: #630020;
+    color: var(--clr-neutral);
     text-decoration: none;
     font-weight: 700;
 }
@@ -1159,6 +1162,6 @@ h6 {
 }
 
 .copyright {
-    color: #005163;
+    color: var(--clr-primary);
 
 }
